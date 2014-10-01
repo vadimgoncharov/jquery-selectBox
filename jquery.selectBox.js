@@ -783,6 +783,7 @@
                 break;
             case 13:
                 // enter
+                event.preventDefault();
                 if (control.hasClass('selectBox-menuShowing')) {
                     this.selectOption(options.find('LI.selectBox-hover:first'), event);
                     if (control.hasClass('selectBox-dropdown')) {
