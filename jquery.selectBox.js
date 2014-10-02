@@ -66,8 +66,12 @@
             , tabIndex = parseInt(select.prop('tabindex')) || 0
             , self     = this;
 
-        control
-            .width(select.outerWidth())
+        var selectOuterWidth = select.outerWidth();
+        if (selectOuterWidth > 0) {
+            control.width(selectOuterWidth);
+        }
+        
+        control    
             .addClass(select.attr('class'))
             .attr('title', select.attr('title') || '')
             .attr('tabindex', tabIndex)
