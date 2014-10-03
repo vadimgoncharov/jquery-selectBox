@@ -5,7 +5,8 @@
  *
  * v1.2.0
  *
- * https://github.com/marcj/jquery-selectBox
+ * original: https://github.com/marcj/jquery-selectBox
+ * this is fork: https://github.com/vadimgoncharov/jquery-selectBox
  */
 ;(function ($) {
 
