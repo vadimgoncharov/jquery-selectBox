@@ -66,9 +66,11 @@
             , tabIndex = parseInt(select.prop('tabindex')) || 0
             , self     = this;
 
-        var selectOuterWidth = select.outerWidth();
-        if (selectOuterWidth > 0) {
-            control.width(selectOuterWidth);
+        var widthAlreadySet = parseInt(control.css('width'), 10) > 0;
+        if (!widthAlreadySet) {
+            if (select.width() > 0) {
+                control.width(select.outerWidth());
+            }
         }
         
         control    
